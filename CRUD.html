@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/897905d995.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav> este es el nav</nav>
+
+
+
+    <!--Esta es la categoría de estudio-->
+    <div class="category"> 
+        <p style="width: 40vw; font-size: 3.5em; margin: 0px; color:  var(--secondary); "><</p>
+        
+           <h1 style="width: 60vw;"> Preguntas UNAM</h1>
+        
+    </div>
+
+      <!--Bienvenida y Materia-->
+      <div class="welcome">
+          <h2>Hola Israel</h2>
+          <h2>Matemáticas</h2>
+
+      </div>
+
+     <!--CRUD & LIST "table-work"--> 
+     <div class="table-work">
+
+        <!--Aqui empieza el form-->
+        <div class="form">
+            <div style="display: flex; padding: 1em;  "><p class="copie">Agrega todas las preguntas necesarias aquí</p> <i class="fa-solid fa-circle-check fa-lg fa-beat"></i></div>
+
+            <div class="form-container">
+
+                <div class="header-form">
+                    <div >
+                        <label for="fname" >Materia:</label><br>
+                        <input type="text"  style=" width: 30vw;">
+
+                    </div>
+
+                    <div >
+                        <label for="fname">Area:</label> <br>
+                        <input class="numberInput" type="number" >
+
+                    </div>
+                                   
+
+                </div>
+                <!--Aqui termina  header form-->
+                <label for="">Pregunta:</label>
+                <textarea name="" id="" rows="5" style=" width:100%"></textarea>
+
+                <!--upload img-->
+                <div class="upload-img"> 
+                    <p>Arrastra o selecciona tu foto</p>
+
+                </div>
+
+                <div class="preguntas">
+
+                    <div class="pregunta_unica">
+                        <label for="fname">Respuesta correcta:</label> <br>
+                        <input type="text"  class="pregunta_correcta" style="width: 100%;  border: solid 1px var(--tertiary) !important;">
+
+                    </div>
+                    <div class="pregunta_unica">
+                        <label for="fname">Respuesta 1:</label> <br>
+                        <input type="text"  style="width: 100%;">
+
+                    </div>
+                    <div class="pregunta_unica">
+
+                         <label for="fname">Respuesta 2:</label> <br>
+                         <input type="text"  style="width: 100%;">
+
+                    </div>
+                    <div class="pregunta_unica">
+                        <label for="fname">Respuesta 3:</label> <br>
+                        <input type="text"  style="width: 100%;">
+
+                    </div>
+
+               
+               
+                <div class="buttons">
+                    <button class="primary-btn" role="button">Preview</button>
+                    <button role="button" class="secondary-btn" >Add</button>
+
+
+                </div>
+
+            </div>
+               
+            </div>
+
+        </div>
+
+
+        <!--Aqui empieza el listado de preguntas-->
+        <div class="list">
+            <div class="copiesList">
+                <h3># </h3>
+                <p>Pregunta:</p>
+            </div>
+            
+
+            <div class=" card-question">
+                <h3>1</h3>
+                <p>ELorem ipsum dolor sit amet, consectetur adipiscing elit...?</p>
+                <i class="fa-solid fa-circle-xmark fa-xl quitIcon"></i>
+
+            </div>
+            <div class=" card-question">
+                <h3>2</h3>
+                <p>ELorem ipsum dolor sit amet, consectetur adipiscing elit..?</p>
+                <i class="fa-solid fa-circle-xmark fa-xl quitIcon"></i>
+
+            </div>
+            
+
+ 
+
+
+        </div>
+
+     </div>
+    
+</body>
+</html>
