@@ -35,7 +35,9 @@
      <div class="table-work">
 
         <!--Aqui empieza el form-->
-        <div class="form">
+        <form class="form" id="Qform">
+            <label for="fname" >Materia:</label><br>
+            <input type="text"  id="Materia" style=" width: 30vw;">
             <div style="display: flex; padding: 1em;  "><p class="copie">Agrega todas las preguntas necesarias aquí</p> <i class="fa-solid fa-circle-check fa-lg fa-beat"></i></div>
 
             <div class="form-container">
@@ -43,13 +45,13 @@
                 <div class="header-form">
                     <div >
                         <label for="fname" >Materia:</label><br>
-                        <input type="text"  style=" width: 30vw;">
+                        <input type="text"  id="Materia" style=" width: 30vw;">
 
                     </div>
 
                     <div >
                         <label for="fname">Area:</label> <br>
-                        <input class="numberInput" type="number" >
+                        <input id="Area" class="numberInput" type="number" >
 
                     </div>
                                    
@@ -57,7 +59,7 @@
                 </div>
                 <!--Aqui termina  header form-->
                 <label for="">Pregunta:</label>
-                <textarea name="" id="" rows="5" style=" width:100%"></textarea>
+                <textarea name="" id="Pregunta" rows="5" style=" width:100%"></textarea>
 
                 <!--upload img-->
                 <div class="upload-img"> 
@@ -69,31 +71,31 @@
 
                     <div class="pregunta_unica">
                         <label for="fname">Respuesta correcta:</label> <br>
-                        <input type="text"  class="pregunta_correcta" style="width: 100%;  border: solid 1px var(--tertiary) !important;">
+                        <input type="text"  class="pregunta_correcta" style="width: 100%;  border: solid 1px var(--tertiary) !important; " id="RespuestaC">
 
                     </div>
                     <div class="pregunta_unica">
                         <label for="fname">Respuesta 1:</label> <br>
-                        <input type="text"  style="width: 100%;">
+                        <input type="text"  style="width: 100%;" id="Respuesta1">
 
                     </div>
                     <div class="pregunta_unica">
 
                          <label for="fname">Respuesta 2:</label> <br>
-                         <input type="text"  style="width: 100%;">
+                         <input type="text"  style="width: 100%;" id="Respuesta2">
 
                     </div>
                     <div class="pregunta_unica">
                         <label for="fname">Respuesta 3:</label> <br>
-                        <input type="text"  style="width: 100%;">
+                        <input type="text"  style="width: 100%;" id="Respuesta3">
 
                     </div>
 
                
                
                 <div class="buttons">
-                    <button class="primary-btn" role="button">Preview</button>
-                    <button role="button" class="secondary-btn" >Add</button>
+                   <!--<button class="primary-btn" role="button">Preview</button> --> 
+                    <button role="button" class="secondary-btn"  id="btn-task-save">Add</button>
 
 
                 </div>
@@ -102,7 +104,7 @@
                
             </div>
 
-        </div>
+        </form>
 
 
         <!--Aqui empieza el listado de preguntas-->
@@ -133,6 +135,7 @@
         </div>
 
      </div>
-    
+    <!--Aqui van los scripts-->
+    <script type="module" src="./index.js"></script>
 </body>
 </html>
