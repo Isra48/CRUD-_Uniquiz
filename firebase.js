@@ -18,6 +18,6 @@
   const app = initializeApp(firebaseConfig);
   const db = getFirestore()
 
-  export const saveQ = (Materia, Area, Pregunta, RespuestaC, Respuesta1, Respuesta2, Respuesta3) =>{
-        addDoc(collection(db,'Preguntas'),{Materia: Materia, Area: Area, Pregunta: Pregunta, RespuestaC: RespuestaC,Respuesta1: Respuesta1, Respuesta2: Respuesta2, Respuesta3: Respuesta3})
+  export const saveQ = (Materia, Area, Pregunta, RespuestaC, Respuesta1, Respuesta2, Respuesta3  ) =>{
+        addDoc(collection(db,'Preguntas'),{Materia: Materia, Area: Area, Pregunta: Pregunta, RespuestaC: RespuestaC, Respuesta1: Respuesta1, Respuesta2: Respuesta2, Respuesta3: Respuesta3, })
   }
