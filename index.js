@@ -1,9 +1,37 @@
-import {saveQ} from './firebase.js';
-window.addEventListener('DOMContentLoaded', () =>{
-    
-})
-
+import {getQ, saveQ, onSnapshot,collection,db} from './firebase.js';
 const Qform = document.getElementById('Qform')
+
+const ContainerQ = document.getElementById('List-Container')
+
+window.addEventListener('DOMContentLoaded', async () =>{
+  //const Questions= await getQ()
+  onSnapshot(collection(db,'Preguntas'),(Questions)=>{
+    let html = ''
+    
+    Questions.forEach(doc =>{
+        const task = doc.data()
+        console.log(doc.data())
+  
+        html += `
+        <div class="card-question" style=" justify-content:space-around; margin-right:1em; ">
+       
+  
+          
+          <p class="">${task.Pregunta} </p>
+          <i class="fa-solid fa-circle-xmark fa-xl quitIcon"></i>
+        </div>
+        `
+    } )
+    ContainerQ.innerHTML = html
+
+  });
+
+  
+
+ 
+});
+
+
 
 Qform.addEventListener('submit', (e) => {
     e.preventDefault();

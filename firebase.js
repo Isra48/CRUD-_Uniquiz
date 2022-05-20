@@ -1,6 +1,6 @@
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
-  import { getFirestore, collection,addDoc } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js";
+  import { getFirestore, collection,addDoc, getDocs, onSnapshot } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js";
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -20,4 +20,10 @@
 
   export const saveQ = (Materia, Area, Pregunta, RespuestaC, Respuesta1, Respuesta2, Respuesta3  ) =>{
         addDoc(collection(db,'Preguntas'),{Materia: Materia, Area: Area, Pregunta: Pregunta, RespuestaC: RespuestaC, Respuesta1: Respuesta1, Respuesta2: Respuesta2, Respuesta3: Respuesta3, })
+  }
+
+  export const getQ =() => getDocs(collection(db,'Preguntas'))
+  export const onGetQ = () => console.log('onGetQ')
+  export{
+    onSnapshot,collection, db
   }

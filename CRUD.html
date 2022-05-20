@@ -44,13 +44,31 @@
                 <div class="header-form">
                     <div >
                         <label for="fname" >Materia:</label><br>
-                        <input type="text"  id="Materia"  name="Materia" style=" width: 30vw;">
+                      <!--  <input type="text"  id="Materia"  name="Materia" style=" width: 30vw;">
+
+                        -->
+                        <select id="Materia" for="fname" class="selectMateria" >
+                            <option value="Español">Español</option>
+                            <option value="Física">Física</option>
+                            <option value="Matemáticas" selected>Matemáticas</option>
+                            <option value="Literatura">Literatura</option>
+                            <option value="Geografía">Geografía</option>
+                            <option value="Biología">Biología</option>
+                            <option value="Química">Química</option>
+                            <option value="Historia Universal">Historia Universal</option>
+                            <option value="Historia de México">Historia de México</option>
+                            <option value="Filosifía">Filosifía</option>
+                          </select>
+                          
+
+
 
                     </div>
 
                     <div >
                         <label for="fname">Area:</label> <br>
                         <input id="Area" class="numberInput" type="number" name="Area" >
+
 
                     </div>
                                    
@@ -126,12 +144,17 @@
                 <i class="fa-solid fa-circle-xmark fa-xl quitIcon"></i>
 
             </div>
+               <!--Prueba de listado de preguntas-->
+        <div id="List-Container">
             
-
- 
-
+        </div>
 
         </div>
+
+     
+
+
+
 
      </div>
     <!--Aqui van los scripts-->

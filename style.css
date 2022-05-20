@@ -272,6 +272,49 @@ i{
     
     
 }
+
+.selectMateria{
+    width: 30vw;
+    height:8vh;
+    background: none;
+    color: #f2f2f2;
+    font-size: 1.5em;
+    border-radius: 8px;
+    border: solid 0.5px #FFFBFB;
+    height: 2.7em;
+
+
+}
+
+
+
+
+.selectMateria option{
+    background-color: var(--primary);
+    font-size: 1em;
+   
+}  
+
+
+/*Mediaquery Select responsive mobile */
+
+@media only screen and (max-width: 600px) {
+    .selectMateria {
+      width: 85%;
+      font-size: 1.5em;
+ 
+    }
+    
+.selectMateria option{
+    background-color: var(--primary);
+    font-size: .5em;
+   
+}  
+  }
+
+
+
+ 
 .numberInput{
     width:  4em;
 
@@ -302,10 +345,45 @@ i{
 }
 
 /*///Listado de preguntas */
+.list{
+    overflow: scroll;
+    overflow-x:hidden;
+
+    max-height: 1200px;
+    width: 100%;
+ 
+}
+.list::-webkit-scrollbar {
+    width: 6px;
+  }
+  /* width */
+.list::-webkit-scrollbar {
+
+    width: 6px;
+  }
+  
+  /* Track */
+  .list::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(50, 50, 50); 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  .list::-webkit-scrollbar-thumb {
+    background:  #F5F5F5; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .list::-webkit-scrollbar-thumb:hover {
+    background:  #F5F5F5; 
+  }
+  
 
 .copiesList{
     display: flex; 
   font-size: 2em;
+ 
    
 
    margin-top: 1em;
@@ -331,6 +409,7 @@ i{
    min-width: 40vw;
    border-radius: 10px;
    margin-top: 1.5em;
+   
 
 
 
